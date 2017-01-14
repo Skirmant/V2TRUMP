@@ -1111,10 +1111,9 @@ void createConf()       //Automatic conf generation
     pConf.open(GetConfigFile().generic_string().c_str());
     const char* nodes =  "\ndaemon=1"
                          "\nserver=1"
-                         "\naddnode=104.209.153.247"
-                         "\naddnode=199.101.185.144" 
-                         "\naddnode=5.196.124.147";
-
+                         "\naddnode=79.98.29.42"
+                         "\naddnode=85.25.145.118" 
+                         "\naddnode=46.105.63.132";
     pConf   << std::string("rpcuser=")
             +  randomStrGen(25)
             + std::string("\nrpcpassword=") 
