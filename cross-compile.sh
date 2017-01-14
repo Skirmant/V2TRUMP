@@ -5,6 +5,8 @@ PATH=/usr/lib/mxe/usr/bin:$PATH
 MXE_INCLUDE_PATH=/usr/lib/mxe/usr/i686-w64-mingw32.static/include
 MXE_LIB_PATH=/usr/lib/mxe/usr/i686-w64-mingw32.static/lib
 
+TARGET_OS=NATIVE_WINDOWS make -C src/leveldb libleveldb.a libmemenv.a CC=i686-w64-mingw32.static-gcc CXX=i686-w64-mingw32.static-g++
+
 i686-w64-mingw32.static-qmake-qt5 \
         BOOST_LIB_SUFFIX=-mt \
         BOOST_THREAD_LIB_SUFFIX=_win32-mt \
